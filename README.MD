@@ -29,7 +29,7 @@ Ele simula uma loja de suplementos, com páginas de produtos, cadastro e login d
 1. Faça o clone do repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/BRC-Suplementos.git
+   git clone https://github.com/Arruda-007/BRC-Suplementos.git
    ```
 
 2. Acesse a pasta do projeto:
