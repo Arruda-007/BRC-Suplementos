@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Formulario de cadastro</title>
+</head>
+<body>
+    <nav>
+        <a href="Tela_inicial.html">
+            <img src="../img/fitness.png" class="imagge" alt="Logo">
+        </a>
+    </nav>
+    <div class="container">
+        <div class="form">
+            <form action="/action_page.php" method="post" id="myForm" onsubmit="return validateForm()">
+                <div class="form-header">
+                    <div class="heading">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="nomecompleto">Nome Completo:</label>
+                    <input class="input1" id="nomecompleto" type="text" name="nomecompleto" placeholder="Digite seu Nome Completo" required oninput="validateNomeCompleto()">
+                    <div id="nomecompleto-error" class="error-message"></div>
+                </div>
+
+                <div class="input">
+                    <label for="datadenascimento">Data de Nascimento:</label>
+                    <input class="input2" id="datadenascimento" type="date" name="datadenascimento" placeholder="Digite sua Data de Nascimento" required>
+                </div>
+
+                <div class="input">
+                    <label for="genero">Gênero:</label><br>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                
+                    <label for="outro">Outro</label>
+                    <input type="radio" id="outro" name="genero" value="outro" required>
+                </div>
+
+                <div class="input">
+                    <label for="nomematerno">Nome Materno:</label>
+                    <input class="input3" id="nomematerno" type="text" name="nomematerno" placeholder="Digite seu Nome Materno" required>
+                </div>
+
+                <div class="input">
+                    <label for="cpf">CPF:</label>
+                    <input class="input4" id="cpf" type="text" name="cpf"
+                    onkeydown="ajustaCpf(this)" 
+                    onkeyup="ajustaCpf(this)"
+                    onblur="validateCPF()"
+                    maxlength="14" placeholder="xxx.xxx.xxx-xx" required>
+                    <div id="cpf-error" class="error-message"></div>
+                </div>
+        
+                <div class="input">
+                    <label for="email">E-mail:</label>
+                    <input class="input5" id="email" type="email" name="email" placeholder="Digite seu E-mail" required>
+                </div>
+
+                <div class="input">
+                    <label for="telcelular">Telefone Celular:</label>
+                    <input class="input6" id="telcelular" type="tel" name="telcelular" placeholder="(+55)XX-XXXXXXXX" required oninput="formatarTelefone(this)">
+                    <div id="telcelular-error" class="error-message"></div>
+                </div>
+
+                 <div class="input">
+                    <label for="telfixo">Telefone Fixo:</label>
+                    <input class="input7" id="telfixo" type="tel" name="telfixo" placeholder="(+55)XX-XXXXXXXX" required oninput="formatarTelefone(this)">
+                    <div id="telfixo-error" class="error-message"></div>
+                </div>
+
+                <div class="input">
+                    <label for="endereco">Endereço Completo:</label><br>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" onblur="preencherEndereco(this.value)" required placeholder="XXXXX-XXX"><br>
+                    <div id="endereco-error" class="error-message"></div>
+
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" placeholder="Digite o nome do seu bairro" required><br>
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite a cidade" required><br>
+                    
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" placeholder="Digite o estado" required><br>
+                    
+                    <label for="rua">Rua:</label>
+                    <input type="text" id="rua" name="rua" placeholder="Digite o nome da rua" required><br>
+
+                    <label for="complemento">Complemento:</label>
+                    <input type="text" id="complemento" name="complemento" placeholder="Complemento">
+                </div>
+
+                <div class="input">
+                    <label for="usuario">Usuário:</label>
+                    <input id="usuario" type="text" name="usuario" pattern="[a-zA-Z]{6}" placeholder="Digite seu Usuário" required oninput="validateUsuario()">
+                    <div id="usuario-error" class="error-message"></div>
+                </div>
+
+                <div class="input">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" name="senha" pattern="[a-zA-Z]{8}" placeholder="Digite sua senha" required oninput="validateSenha()">
+                    <div id="senha-error" class="error-message"></div>
+                </div>
+
+                <div class="input">
+                    <label for="confirmesuasenha">Confirme sua Senha:</label>
+                    <input id="confirmesuasenha" type="password" name="confirmesuasenha" pattern="[a-zA-Z]{8}" placeholder="Confirme sua senha" required oninput="validateConfirmacaoSenha()">
+                    <div id="confirmesuasenha-error" class="error-message"></div>
+                </div>
+                <div class="bonito">
+                    <button class="button-62" role="button" type="submit">Enviar</button>
+                    <button class="button-62" role="button" type="reset">Limpar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  
+    <script src="cpfenome.js"></script>
+    <script src="cep.js"></script>
+    <script src="telecel.js"></script>
+    <script src="usuariol.js"></script>
+    <script src="senhas.js"></script>
+    <script src="confirmarcad.js"></script>
+</body>
+</html>

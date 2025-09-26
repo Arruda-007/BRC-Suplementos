@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="Tela_inicial.html">
+            <img src="../img/fitness.png" class="imagge" alt="Fitness Logo">
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="heading">Login</div>
+        <form id="loginForm" class="form" onsubmit="return validateLogin()">
+            <div class="input">
+                <label for="usuario">Usuario:</label>
+                <input id="usuario" type="text" name="usuario" pattern="[a-zA-Z]{6,}" placeholder="Digite seu Usuario" required>    
+            </div>
+
+            <div class="input">
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password" name="senha" pattern="[a-zA-Z]{8,}" placeholder="Digite sua senha" required>    
+            </div>
+
+            <div id="login-error" class="error-message"></div>
+
+            <div class="bonito">
+                <button class="button-62" role="button" type="submit">Enviar</button>
+                <button class="button-62" role="button" type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

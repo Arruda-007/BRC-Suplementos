@@ -1,0 +1,112 @@
+body {
+    background: no-repeat;
+    background-image: url(../img/academia1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagge {
+    width:100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 100%;
+}
+
+
+.container {
+position: absolute;
+transform: translate(-50%, -50%);
+top: 55%;
+left: 50%;
+max-width: 290px;
+background: rgb(83, 77, 72);
+background: linear-gradient(0deg, rgb(255, 254, 254)0%, rgb(94, 81, 75)100% );
+border-radius: 40px;
+padding: 65px 50px;
+border: 100px solid rbg(255, 255, 255);
+box-shadow: rgba(90, 55, 15, 0.878) 0px 30px 30px -20px;
+margin: 20px;
+}
+
+input {
+    border: none;
+}
+
+.bonito{
+    padding: 20px 40px;
+    margin: 20px;
+
+    }
+    /* CSS */
+    .button-62 {
+      background: linear-gradient(to bottom right, #312b28, #FF9A5A);
+      border: 0;
+      border-radius: 12px;
+      color: #FFFFFF;
+      cursor: pointer;
+      display: inline-block;
+      font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 2.5;
+      outline: transparent;
+      padding: 0 1rem;
+      text-align: center;
+      text-decoration: none;
+      transition: box-shadow .2s ease-in-out;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+    }
+    
+    .button-62:not([disabled]):focus {
+      box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    }
+    
+    .button-62:not([disabled]):hover {
+      box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+    }
+
+
+.heading {
+text-align: center;
+font-weight: 900;
+font-size: 30px;
+color: rgb(73, 61, 55);
+}
+.form{
+    margin: top 40px;;
+}
+.form .input {
+    width: 87%;
+    background: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: #b96b21 0px 10px 10px -5px;
+    border-inline: 2px solid transparent;
+}
+.form .input::-moz-placeholder {
+    color: rgb(170, 170, 170);
+}
+.login-button {
+    color: #493523;
+    box-shadow: #b96b21;
+    
+}
+.id {
+    padding: 15px;
+    text-align: center;
+}
+.id2 {
+    padding: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
