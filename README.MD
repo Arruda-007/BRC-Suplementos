@@ -35,7 +35,7 @@ Ele simula uma loja de suplementos, com páginas de produtos, cadastro e login d
 2. Acesse a pasta do projeto:
 
    ```bash
-   cd BRC-Suplementos
+   cd BRC-Suplementos ou cd projeto_BRC
    ```
 
 3. Abra o arquivo principal no navegador:
