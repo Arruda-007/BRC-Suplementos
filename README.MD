@@ -24,4 +24,4 @@ Ele simula uma loja de suplementos, com páginas de produtos, cadastro e login d
 ## 📦 Como executar
 1. Faça o clone do repositório:
    ```bash
-   git clone https://github.com/seu-usuario/BRC.git
+   git clone https://github.com/seu-usuario/BRC-Suplementos.git
