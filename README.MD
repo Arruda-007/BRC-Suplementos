@@ -43,3 +43,15 @@ Ele simula uma loja de suplementos, com páginas de produtos, cadastro e login d
    ```
    Paginas/Tela_inicial.html
    ```
+
+
+## 📸 Prévia do Projeto
+   Tela de Login
+   brc_fotos/login.png
+
+   Página de Produtos
+   brc_fotos/produtos.png
+
+   Modo Escuro (Dark Mode) + Fonte Amentada 
+   brc_fotos/darkmode.png
+
